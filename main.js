@@ -2,7 +2,37 @@
  * Your code here!
  ******************************************************************************/
 
+const num1 = getInput(0)
+const num2 = getInput(1)
+const num3 = getInput(2)
 
+// if (getInput(0) % 3 === 0 && getInput(0) % 5 === 0) {
+//   console.log('FizzBuzz') 
+// }
+// else if (getInput(0) % 3=== 0) {
+//   console.log('Fizz')
+// }
+// else if (getInput(0) % 5 === 0) {
+//   console.log("Buzz");
+// }
+// else (
+//   console.log(getInput(0))
+// )
+
+
+
+if (num1 % num2 === 0 && num1 % num3 === 0) {
+  console.log('FizzBuzz') 
+}
+else if (num1 % num3 === 0) {
+  console.log("Buzz");
+}
+else if (num1 % num2 === 0) {
+  console.log('Fizz')
+}
+else (
+  console.log(num1)
+)
 
 
 
