@@ -2,9 +2,9 @@
  * Your code here!
  ******************************************************************************/
 
-const num1 = getInput(0)
-const num2 = getInput(1)
-const num3 = getInput(2)
+let num1 = getInput(0)
+let num2 = getInput(1)
+let num3 = getInput(2)
 
 // if (getInput(0) % 3 === 0 && getInput(0) % 5 === 0) {
 //   console.log('FizzBuzz') 
@@ -20,7 +20,12 @@ const num3 = getInput(2)
 // )
 
 
-
+if (num2 === undefined){
+  num2 = 3
+}
+if (num3 === undefined) {
+  num3 = 5
+}
 if (num1 % num2 === 0 && num1 % num3 === 0) {
   console.log('FizzBuzz') 
 }
@@ -33,6 +38,27 @@ else if (num1 % num2 === 0) {
 else (
   console.log(num1)
 )
+
+// // Without using else
+// const num = getInput(0)
+
+// if (num % 3 === 0 && num % 5 !==0) {
+//   console.log('Fizz');
+// }
+
+// if (num % 5 === 0 && num % 3 !== 0) {
+//   console.log('Buzz');
+// }
+
+// if (num % 3 === 0 && num % 5 === 0) {
+//   console.log('FizzBuzz');
+// }
+
+// if (num % 5 !== 0 && num % 3 !== 0) {
+//   console.log(num);
+// }
+
+
 
 
 
